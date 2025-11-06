@@ -206,3 +206,14 @@ width: 110%;
     cursor: pointer;
     color: #333;
 }
+
+.last-three-blocks{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card-last{
+    background-color: #fff;
+    padding: 20px;
+}
