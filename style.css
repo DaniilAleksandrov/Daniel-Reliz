@@ -1,39 +1,38 @@
+
 html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #282A37;
-    height: 100%;
+  margin: 0; 
+  padding: 0; 
+  background-color: #282A37; 
+  height: 100%; 
 }
 
 
-
-.main-container {
+.main-container { 
     max-width: 1400px;
-    margin: 0;
+    margin: 0 auto;
     background-color: #6e6c6c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 0 40px 20px 40px;
+    padding: 0 40px 20px 40px; 
 }
 
-header {
+header{
     background-color: #282A37;
 }
-.hero-banner {
+.hero-banner { 
     width: 80%;
     background-color: #282A37;
     display: flex;
     margin: 0 auto;
-
+ 
 }
 
 .carousel-inner img{
-width: 110%;
-
+    width: 110%;
 }
 
 .search-bar-container {
     display: flex;
-    padding: 20px 0;
+    padding: 20px 0;  
 }
 
 .search-input {
@@ -56,53 +55,55 @@ width: 110%;
 }
 
 .btn-cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-    position: relative;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 20px;
+
 }
 
 .cart-counter{
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    font-size: 15px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    opacity: 0;
-    transition: 2s linear;
-    top: 115%;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transition: .2s linear;
+  top: 115%;
 }
 
 .icon-cart {
-    width: 24.38px;
-    height: 30.52px;
-    transition: 2s linear;
+  width: 24.38px;
+  height: 30.52px;
+  transition: .2s linear;
 }
 
 .icon-cart path {
-    fill: rgb(255, 255, 255);
-    transition: 2s linear;
+  fill: rgb(255, 255, 255);
+  transition: .2s linear;
 }
 
-.btn-cart:hover > .icon-cart { 
-    transform: scale(1.2);
+.btn-cart:hover > .icon-cart {
+  transform: scale(1.2);
 }
 
 .btn-cart:hover > .icon-cart path {
-    fill: rgb(126, 154, 192);
- } 
+  fill: rgb(126, 154, 192);
+}
 
 .btn-cart:hover .cart-counter {
-    opacity: 1;
-    top: 105%;
+  opacity: 1;
+  top: 105%;
 }
+
 
 .features {
     display: flex;
@@ -119,11 +120,9 @@ width: 110%;
     font-size: 16px;
     color: #5d5d5d;
 }
-
 .feature-item p{
     display: inline;
 }
-
 .feature-item i {
     font-size: 30px;
     display: block;
@@ -131,7 +130,7 @@ width: 110%;
 }
 
 .products {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 60px;
@@ -160,7 +159,6 @@ width: 110%;
     margin-bottom: 5px;
     line-height: 1.2;
 }
-
 .product-descr {
     font-weight: 700;
     font-size: 16px;
@@ -168,7 +166,6 @@ width: 110%;
     line-height: 1.2;
     color: #5d5d5d;
 }
-
 .product-price {
     font-weight: 900;
     color: #000000;
@@ -203,9 +200,122 @@ width: 110%;
 }
 
 #like-button {
-    cursor: pointer;
-    color: #333;
+    cursor: pointer; 
+    color: #333;   
 }
+
+.more-products-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.more-products-button {
+    background-color: #6aaa81;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popular-things {
+    font-weight: 700;
+    color: #333333;
+    font-size: 16px;
+}
+
+
+.exclusive-products {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.exclusive-card {
+    max-width: 400px;
+}
+
+.exclusive-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.exclusive-card p {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.hashtag-section {
+    background-color: #f7f7f7;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.hashtag-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hashtag-header p {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.instagram-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Робимо пости квадратними */
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* ------------------ Футер (Підвал) ------------------ */
+
+.footer {
+    background-color: #6e6c6c;
+    padding: 30px 15px;
+    text-align: center;
+    margin: 0 -40px; /* Розтягуємо футер на всю ширину */
+    width: calc(100% + 80px);
+}
+
+.footer-text {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0 15px;
+    opacity: 0.8;
+}
+
 
 .last-three-blocks{
     background-color: #fff;
