@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Figurine Giant",
+        "descr": "Big And Strong",
+        "image": "IMG/image 1.png",
+        "price": 14
+    },
+
+    {
+        "title": "Figurine .....",
+        "descr": "Big And Strong",
+        "image": "IMG/image 11 (1).png",
+        "price": 13
+    },
+
+    {
+        "title": "Figurine Mini P....A",
+        "descr": "Small But Strong",
+        "image": "IMG/image 10.png",
+        "price": 14
+    },
+
+    {
+
+        "title": "Figurine Barbarian",
+        "descr": "He Likes To Drink Elixir",
+        "image": "IMG/image 12.png",
+        "price": 12
+    },
+
+    {
+        "title": "Figurine Prince",
+        "descr": "He's So Fast",
+        "image": "IMG/image 13.png",
+        "price": 13
+    },
+
+    {
+        "title": "Figurine Wizard",
+        "descr": "He Can Shoot With Fire",
+        "image": "IMG/image 14.png",
+        "price": 15
+    }
+
+    ]
