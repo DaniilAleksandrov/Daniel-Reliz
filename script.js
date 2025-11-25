@@ -3,9 +3,11 @@ function getCookieValue(cookieName) {
     // Розділяємо всі куки на окремі частини
     const cookies = document.cookie.split(';');
 
+
     // Шукаємо куки з вказаним ім'ям
     for (let i = 0; i < cookies.length; i++) {
         const cookie = cookies[i].trim(); // Видаляємо зайві пробіли
+
 
         // Перевіряємо, чи починається поточне кукі з шуканого імені
         if (cookie.startsWith(cookieName + '=')) {
@@ -17,7 +19,9 @@ function getCookieValue(cookieName) {
     return '';
 }
 
+
 let themeBtn = document.querySelector("#themeToggle")
+
 
 function setTheme(theme) {
     if (theme == 'light') {
@@ -29,8 +33,10 @@ function setTheme(theme) {
     }
 }
 
+
 let theme = getCookieValue('theme')
 setTheme(theme)
+
 
 themeBtn.addEventListener("click", () => {
     document.body.classList.toggle('light-theme'); // Перемикаємо клас теми
@@ -42,21 +48,20 @@ themeBtn.addEventListener("click", () => {
     setTheme(theme)
     // Зберігаємо JSON рядок у кукі
     document.cookie = `theme=${theme}; max-age=${60 * 60 * 24 * 7}; path=/`;
-}) 
+})
+
 
 // Очікуємо завантаження сторінки
 document.addEventListener('DOMContentLoaded', function() {
     // Отримуємо всі написи для анімації
     const textElements = document.querySelectorAll('.fade-in-text');
 
+
     // Додаємо клас "show" для запуску анімації
     textElements.forEach(element => {
         element.classList.add('show');
     });
 });
-
-
-//ДОДАТИ ВСЕРЕДИНУ
 
 
 // Отримуємо дані про товари з JSON файлу
