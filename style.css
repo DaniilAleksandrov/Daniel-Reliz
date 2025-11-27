@@ -2,15 +2,14 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #282A37;
-    height: 100%;
+    background-color: #282A37; 
+    font-family: 'Roboto', sans-serif;
 }
-
 
 .main-container {
     max-width: 1400px;
     margin: 0 auto;
-    background-color: #6e6c6c;
+    background-color: #6e6c6c; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 0 40px 20px 40px;
 }
@@ -18,7 +17,6 @@ body {
 header {
     background-color: #282A37;
 }
-
 .hero-banner {
     width: 80%;
     background-color: #282A37;
@@ -412,6 +410,55 @@ body.light-theme main {
   cursor: pointer;
   transition-duration: .2s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+}
+
+
+/* Футер */
+.footer {
+    background-color: #6e6c6c;
+    padding: 30px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 -40px;          /* тягнемо фон футера на всю ширину */
+    width: calc(100% + 80px);
+}
+
+.footer-text {
+    font-weight: 800;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0 15px;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.social-icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282A37;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+body.light-theme {
+    background-color: #282A37;
+    color: #181818;
 }
 
 
